@@ -13,14 +13,14 @@ Direkt im Browser öffnen (ohne Server; `reise.html` lädt als Hintergrund Karte
 | --- | --- |
 | `../../3_visualization/web/reise.html` | **Weltreise 1892–93 Tag für Tag**: Route nach dem Tagebuch, Tageskarten mit Scan-Link, Ebene „Jagd“ (Sätze vom Erlegen/Schießen im Wortlaut), Kulturpool, Presse (ANNO). Direktlink zu einem Tag: `reise.html#1893-01-11` |
 | `../../3_visualization/web/geschichte.html` | **Jagdreise 1892–93 als Geschichte**: nur die Fahrt mit S.M.S. Kaiserin Elisabeth bis Yokohama (24.8.1893), in Kapiteln entlang der 18 Jagden und der Strecken dazwischen; großer Text mit Foto, Tagebuch-Zitaten, Presse, lebenden Tieren und Objekten, kleine Karte (Karte 1872) und einzeilige Zeitleiste. Die 55 Tage danach (ohne das Schiff) nur als Epilog und graue Linie. Gleiche Daten wie `reise.html` (`data/ke_enrichment.js`). Direktlink zu einem Kapitel: `geschichte.html#hunt-1893-03-09-nepal` |
-| `../../3_visualization/web/index.html` | **Startseite**: wie die Daten entstanden (Quellen, Normalisierung, Anreicherung, Prüfung; Zahlen live aus `data/ke_enrichment.js`), drei Ansichten als Kacheln mit Vorschau (`img/previews/`: Geschichte, Reise Tag für Tag, offene Daten in ArcGIS), Leiste „Hack the Pool 2026“ mit Kulturpool, ACDH-CH (ÖAW) und CLARIAH-AT, Institutionen mit Logos, Literatur (Tagebuch, Höfer 2010) (`img/logos/`: Kulturpool, ÖNB, Weltmuseum Wien, Europeana, CLARIAH-AT von deren Websites, ACDH-CH von Wikimedia Commons unter CC BY-SA 4.0; Marken der Institutionen), Team, Grenzen. Die ArcGIS-Kachel verlinkt Leanders StoryMap „Who was hunted?“ (https://arcg.is/0DXKX), die Kartenebenen liegen in `prototype/arcgis/` |
+| `../../3_visualization/web/index.html` | **Startseite**: wie die Daten entstanden (Quellen, Normalisierung, Anreicherung, Prüfung; Zahlen live aus `data/ke_enrichment.js`), drei Ansichten als Kacheln mit Vorschau (`img/previews/`: Geschichte, Reise Tag für Tag, offene Daten in ArcGIS), Leiste „Hack the Pool 2026“ mit Kulturpool, ACDH-CH (ÖAW) und CLARIAH-AT, Institutionen mit Logos, Literatur (Tagebuch, Höfer 2010) (`img/logos/`: Kulturpool, ÖNB, Weltmuseum Wien, Europeana, CLARIAH-AT von deren Websites, ACDH-CH von Wikimedia Commons unter CC BY-SA 4.0; Marken der Institutionen), Team, Grenzen. Die ArcGIS-Kachel verlinkt Leanders Karte in ArcGIS Online (https://cacgeoportal-hub.maps.arcgis.com/home/item.html?id=977298da4e1a47c380c77a9041e11908#overview), die StoryMap „Who was hunted?“ steht im Hinweis darunter |
 | `../../3_visualization/web/schiff.html` | erster Prototyp (früher `index.html`): alle Reisen des Schiffs 1892–1914 aus dem Vault, Kulturpool-Treffer je Station. Direktlink: `schiff.html#stop=Bombay` |
 
 ## Was die Daten zeigen (Stand 27.10.2026)
 
 | | |
 | --- | --- |
-| Tagebuchtage (15.12.1892–17.10.1893) | 170; 81 auf der Karte, kleine Orte nur in der Tagesliste |
+| Tagebuchtage (14.12.1892–18.10.1893) | 309 (nach `../normalization/json/tagebuch_tage.json`), davon 170 mit eigener Überschrift in der OCR; 79 Überschrift-Orte im Ortsverzeichnis gefunden |
 | Tage mit Sätzen vom Erlegen oder Schießen | 65 Tage, 211 Sätze (ungeprüft; genannte Tiere ≠ getötete Tiere) |
 | Stationen aller Reisen 1892–1914 (Vault) | 90, davon 70 verortet; 24 mit Kulturpool-Treffern im Zeitfenster |
 | Kulturpool-Datensätze, die das Schiff nennen | 2 (Phrasensuche) |
@@ -69,7 +69,7 @@ Ausschnitte von Hand in `../../3_visualization/web/data/presse_anno.csv` eintrag
 Python 3.13, [uv](https://docs.astral.sh/uv/), im Ordner `expedition_pool_edition/2_processing/kaiserin_elisabeth/`:
 
 ```
-uv run python -m scripts.ke_diary           # Tagebuch -> Tagesroute, Jagdsätze, Presse (reise.html)
+uv run python -m scripts.ke_diary           # Tagebuch nach Tagen (aus ../normalization) -> Tagesroute, Jagdsätze, Presse
 uv run python -m scripts.ke_itinerary       # Reisen aus dem Vault -> Stationen, Linien (schiff.html)
 uv run python -m scripts.ke_places_lpf      # historische Ortsnamen (Linked Places)
 uv run python -m scripts.ke_stop_records    # Kulturpool-Treffer je Station (schiff.html)
