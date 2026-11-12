@@ -24,6 +24,9 @@ Ein Hackathon von [Kulturpool](https://kulturpool.at) und dem [ACDH](https://www
 Die Weltreise des Thronfolgers an Bord S.M.S. Kaiserin Elisabeth 1892/93 und seine Jagden: aus einem
 Archiv-Vault zur k.u.k. Kriegsmarine, dem gedruckten Tagebuch, Zeitungen (ANNO) und Museumssammlungen
 (Kulturpool, Weltmuseum Wien, Europeana) ein verknüpfter Datensatz, dazu drei Ansichten.
+
+<embed src="slides/Cause_of_Death_Franz_Ferdinand.pdf" width="100%" height="850px"/>
+
 Alles im Ordner [`expedition_pool_edition/`](expedition_pool_edition/) ([README](expedition_pool_edition/README.md)); Einstieg:
 [`expedition_pool_edition/3_visualization/web/index.html`](expedition_pool_edition/3_visualization/web/index.html).
 
@@ -31,6 +34,9 @@ Alles im Ordner [`expedition_pool_edition/`](expedition_pool_edition/) ([README]
 ### Poolboard
 
 Nutzer:innen erhalten ein zufälliges **Startobjekt** aus Kulturpool (kulturpool.at) und entdecken von dort aus Schritt für Schritt ähnliche Objekte. Zu jedem Objekt gibt es 10 **Metadaten-Vorschläge** und 10 **Bild-Vorschläge**. Gewählte Objekte bilden eine **Reise** (max. 20 Objekte, linear). Am Ende entsteht ein **Board**, das zeigt, wie die Objekte durch **Verbindungen** zusammenhängen. Boards liegen lokal in der **History** und lassen sich im Kulturpool-Favoriten-Format exportieren und importieren.
+
+<embed src="slides/Poolboard.pdf" width="100%" height="850px"/>
+
 Alles im Ordner [`poolboard/`](poolboard/) ([README](poolboard/README.md)).
 
 
