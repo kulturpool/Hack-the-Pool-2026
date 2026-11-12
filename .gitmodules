@@ -1,0 +1,3 @@
+[submodule "poolboard"]
+	path = poolboard
+	url = git@github.com:bindleh/poolboard.git
