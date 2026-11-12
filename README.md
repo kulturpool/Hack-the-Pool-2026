@@ -27,6 +27,13 @@ Archiv-Vault zur k.u.k. Kriegsmarine, dem gedruckten Tagebuch, Zeitungen (ANNO) 
 Alles im Ordner [`expedition_pool_edition/`](expedition_pool_edition/) ([README](expedition_pool_edition/README.md)); Einstieg:
 [`expedition_pool_edition/3_visualization/web/index.html`](expedition_pool_edition/3_visualization/web/index.html).
 
+
+### Poolboard
+
+Nutzer:innen erhalten ein zufälliges **Startobjekt** aus Kulturpool (kulturpool.at) und entdecken von dort aus Schritt für Schritt ähnliche Objekte. Zu jedem Objekt gibt es 10 **Metadaten-Vorschläge** und 10 **Bild-Vorschläge**. Gewählte Objekte bilden eine **Reise** (max. 20 Objekte, linear). Am Ende entsteht ein **Board**, das zeigt, wie die Objekte durch **Verbindungen** zusammenhängen. Boards liegen lokal in der **History** und lassen sich im Kulturpool-Favoriten-Format exportieren und importieren.
+Alles im Ordner [`poolboard/`](poolboard/) ([README](poolboard/README.md)).
+
+
 ## Anmeldung
 
 [umfrage.kulturpool.at/hack-the-pool-2026](https://umfrage.kulturpool.at/hack-the-pool-2026) — bis 6. Oktober 2026. Alle Infos zur Veranstaltung auf [info.kulturpool.at](https://info.kulturpool.at/hack-the-pool-2026/).
