@@ -40,6 +40,32 @@ Nutzer:innen erhalten ein zufälliges **Startobjekt** aus Kulturpool (kulturpool
 Alles im Ordner [`poolboard/`](poolboard/) ([README](poolboard/README.md)).
 
 
+### Cleaning Metadata from Hell: The Bademeister:innen Pool Tool
+
+PoolTool analysiert Metadaten aus Kulturpool. Eine Web-Oberfläche gleicht unterschiedliche Schreibweisen mit kontrollierten Vokabularen ab — etwa „Foto“, „Fotos“ und „Photographie“ mit „Fotografie“. Nutzer:innen prüfen die Vorschläge und entscheiden, welche Varianten ersetzt werden. Die normalisierten Datensätze lassen sich zusammen mit einem Änderungsprotokoll und einem Verarbeitungsbericht exportieren.
+
+<embed src="slides/PoolTool.pdf" width="100%" height="850px"/>
+
+Alles im Ordner [`PoolTool/`](PoolTool/) ([README](PoolTool/README.md)).
+
+
+### Kleid____oskop
+
+Mode Kaleidoskop ist ein Prototyp, mit dem man historische Modebilder ohne Suchfeld erkunden kann. Ausgangspunkt ist eine von vier Perspektiven: Farbe, Silhouette, Accessoires oder visuelle Ähnlichkeit (Embedding). Die Website zeigt dann eine Reihe von Bildern, die sich in diesem Merkmal schrittweise verändern.
+
+<embed src="slides/kleid_oskop.pdf" width="100%" height="850px"/>
+
+Alles im Ordner [`kleid_oskop/`](kleid_oskop/) ([README](kleid_oskop/README.md)).
+
+
+### Veryfakecation: Verification Alert System
+
+Veryfakecation ist eine Web-Anwendung zur fachlichen Prüfung vorgeschlagener Verknüpfungen zwischen Kulturpool-Datensätzen und Wikidata-Entitäten, insbesondere bei unsicheren Bewertungen eines Sprachmodells. Nutzer:innen sehen den ursprünglichen Datensatz sowie die Modellentscheidung samt Begründung und können Zuordnungen bestätigen oder ablehnen und ihre Entscheidung kommentieren.
+
+<embed src="slides/verifakeaction.pdf" width="100%" height="850px"/>
+
+Alles im Ordner [`verifakecation/`](verifakecation/) ([README](verifakecation/README.md)).
+
 ## Anmeldung
 
 [umfrage.kulturpool.at/hack-the-pool-2026](https://umfrage.kulturpool.at/hack-the-pool-2026) — bis 6. Oktober 2026. Alle Infos zur Veranstaltung auf [info.kulturpool.at](https://info.kulturpool.at/hack-the-pool-2026/).

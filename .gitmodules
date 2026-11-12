@@ -1,3 +1,12 @@
 [submodule "poolboard"]
 	path = poolboard
 	url = git@github.com:bindleh/poolboard.git
+[submodule "PoolTool"]
+	path = PoolTool
+	url = git@github.com:CMSonb/PoolTool.git
+[submodule "kleid_oskop"]
+	path = kleid_oskop
+	url = git@github.com:danrebe/AusTrier_Mode.git
+[submodule "verifakecation"]
+	path = verifakecation
+	url = git@github.com:trestoris/hackathon-kulturpool.git
